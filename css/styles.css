@@ -32,7 +32,6 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1158px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -94,7 +93,8 @@ img {
 }
 
 .section {
-    padding-top: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 
@@ -274,34 +274,51 @@ img {
 /* =================== +++ of this comp ============= */
 
 .features-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
 }
 
 .hidden-title {}
 
 .quality-list {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     gap: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .quality-titles {}
 
 .quality-icons-cont {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     height: 112px;
     background-color: #F4F4FD;
     margin-bottom: 8px;
     padding: 24px 100px;
-    border-radius: 4px;
+    border-radius: 4px; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 
 }
 
 .quality-svg {}
 
 .quality-little-title {
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 700;
     margin-bottom: 8px;
 }
 
@@ -330,8 +347,6 @@ img {
 
 .team-sec {
     background-color: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .team-container {}
@@ -342,18 +357,27 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 72px;
+    padding-left: 82px;
+    padding-right: 82px;
 }
 
 .team-photos {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     background-color: #ffffff;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    width: 264px;
+
     /* height: 380px; */
-    width: calc((100%-48px)/3);
+    /* width: calc((100%-48px)/3); */
 }
 
 .team-photo {
@@ -414,23 +438,27 @@ img {
 /* ================= Customers =============== */
 
 .customers-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .customers-sec-title {
     margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
 }
 
 .customers-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
-
+    gap: 72px 16px;
 }
 
 .customers-list-item {
-    width: calc((100% - 120px) / 6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
@@ -464,17 +492,25 @@ img {
 
 .footer {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .footer-logo-div {
-    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -506,12 +542,23 @@ img {
 }
 
 .p-footer {
-    color: #f4f4fd;
-    max-width: 264px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    max-width: 268px;
 }
 
 .footer-soc-div {
-    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .footer-soc-title {
@@ -559,6 +606,15 @@ img {
 
 }
 
+.footer-subscribe-div {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .footer-subscribe-lable {
     font-family: var(--primary-font);
     font-style: normal;
@@ -571,7 +627,12 @@ img {
 
 .footer-subscribe-form {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 16px;
+    width: 100%;
 }
 
 .footer-subscribe-input {
@@ -580,10 +641,10 @@ img {
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 264px;
+    width: 100%;
+    max-width: 396px;
     height: 40px;
     padding-left: 16px;
-    margin-right: 24px;
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: 400;
@@ -592,6 +653,7 @@ img {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     outline: none;
+    margin-bottom: 16px;
 }
 
 .footer-subscribe-input::placeholder {
