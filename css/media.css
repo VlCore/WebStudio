@@ -1,5 +1,3 @@
 @media screen and (min-width: 458px) {
-    .container {
-        max-width: 458;
-    }
+    .container {}
 }

@@ -31,7 +31,7 @@ img {
 }
 
 .container {
-    width: 100%;
+    min-width: 458px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -103,6 +103,8 @@ img {
 /* =================== HEADER ==================== */
 
 .page-header {
+    min-width: 458px;
+    height: 70px;
     border-bottom: #E7E9FC 1px solid;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -132,6 +134,7 @@ img {
     text-transform: uppercase;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     color: #4D5AE5;
+    padding: 24px 0 22px 16px;
     margin-right: 76px;
 }
 
@@ -139,15 +142,19 @@ img {
     color: #2E2F42;
 }
 
+
+
 .menu {
     display: flex;
     gap: 40px;
 }
 
-.menu-item {}
+.menu-item {
+    display: none;
+}
 
 .menu-link {
-    display: inline-block;
+    /* display: inline-block; */
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: 500;
@@ -183,6 +190,7 @@ img {
 }
 
 .adress-header {
+    display: none;
     font-style: normal;
     margin-left: auto;
 }
@@ -211,11 +219,12 @@ img {
 /* ================== HERO ===================== */
 
 .hero {
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    min-width: 458px;
     margin: 0 auto;
     background-color: #2e2f42;
-    padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herobg.jpg);
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herobg-small.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -225,19 +234,20 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .main-title {
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    max-width: 496px;
-    margin-bottom: 48px;
+    max-width: 320px;
+    margin-bottom: 72px;
 
 }
 
@@ -274,6 +284,9 @@ img {
 /* =================== +++ of this comp ============= */
 
 .features-section {
+    display: flex;
+
+
     /* padding-top: 120px;
     padding-bottom: 120px; */
 }
@@ -283,33 +296,27 @@ img {
 .quality-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     text-align: center;
-    gap: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
+    gap: 72px;
+
 }
 
-.quality-titles {}
+.quality-titles {
+    width: 396px;
+}
 
 .quality-icons-cont {
-    /* display: flex;
+    display: none;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     height: 112px;
     background-color: #F4F4FD;
     margin-bottom: 8px;
     padding: 24px 100px;
-    border-radius: 4px; */
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    border-radius: 4px;
 
 }
 
@@ -322,10 +329,14 @@ img {
     margin-bottom: 8px;
 }
 
+.feature-descr-p {
+    text-align: left;
+}
+
 /* =============== What are we doing ============ */
 
 .facil-section {
-    padding-bottom: 120px;
+    display: none;
 }
 
 .facil-sec-title {
@@ -346,6 +357,7 @@ img {
 /* ==================== Team ================= */
 
 .team-sec {
+    min-width: 458px;
     background-color: #f4f4fd;
 }
 
@@ -491,6 +503,7 @@ img {
 /* ================= FOOTER ================ */
 
 .footer {
+    min-width: 458px;
     background-color: #2e2f42;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -888,6 +901,10 @@ img {
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8E8F99;
+}
+
+.modal-link {
+    color: #4D5AE5;
 }
 
 .modal-privacy-inp:checked+.modal-checkbox-icon {
