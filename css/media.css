@@ -1,3 +1,102 @@
 @media screen and (min-width: 458px) {
-    .container {}
+    .container {
+        max-width: 428px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .menu-item {
+        display: inline-block;
+    }
+
+    .menu-link {
+        display: ;
+    }
+
+    .adress-header {
+        display: inline-block;
+
+    }
+
+    .adress-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cont-link {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herobg-tablet.jpg);
+    }
+
+    .main-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+
+    .quality-list {
+        row-gap: 72px;
+        column-gap: 24px;
+        text-align: left;
+    }
+
+    .quality-titles {
+        width: 356px;
+    }
+
+    .team-list {
+        padding: 0;
+    }
+
+    .customers-list {
+        gap: 72px 24px;
+    }
+
+    .customers-list-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .footer-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer-logo-div {
+        align-items: flex-start;
+        margin-right: 24px;
+    }
+
+    .footer-soc-div {
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .footer-subscribe-div {
+        align-items: normal;
+        margin-left: 119px;
+    }
+
+    .footer-subscribe-form {
+        flex-direction: row;
+        align-items: normal;
+        justify-content: normal;
+
+    }
+
+    .footer-subscribe-label {}
+
+    .footer-subscribe-input {
+        max-width: 264px;
+        margin-right: 24px;
+    }
 }
