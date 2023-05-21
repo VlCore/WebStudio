@@ -9,6 +9,7 @@
         max-width: 768px;
     }
 
+
     .menu-item {
         display: inline-block;
     }
@@ -99,4 +100,116 @@
         max-width: 264px;
         margin-right: 24px;
     }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .menu-item {
+        display: normal;
+    }
+
+    .adress-header {}
+
+    .adress-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .cont-link {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .hero {
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herobg.jpg);
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    .main-title {
+        margin-bottom: 48px;
+    }
+
+    .quality-list {
+        gap: 24px;
+        flex-wrap: nowrap;
+    }
+
+    .quality-titles {
+        width: 264px;
+    }
+
+    .quality-icons-cont {
+        display: flex;
+    }
+
+    .quality-little-title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .facil-section {
+        display: block;
+        padding-bottom: 120px;
+    }
+
+    .team-container {
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .customers-list-item {
+        width: calc((100% - 120px) / 6);
+    }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+
+    .footer-logo-div {
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 120px;
+    }
+
+    .footer-soc-div {
+        margin-bottom: 0;
+        margin-right: 80px;
+    }
+
+    .footer-subscribe-div {
+        margin-left: 0;
+        margin-right: 0;
+        width: 453px;
+    }
+
+    .footer-subscribe-form {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 16px;
+        width: 453px;
+    }
+
+
+
 }
