@@ -5,6 +5,15 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
     .container {
         max-width: 768px;
     }
@@ -52,7 +61,7 @@
     }
 
     .quality-titles {
-        width: 356px;
+        max-width: 356px;
     }
 
     .team-list {
@@ -103,6 +112,15 @@
 }
 
 @media screen and (min-width: 1158px) {
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
     .container {
         max-width: 1158px;
     }
@@ -145,7 +163,7 @@
     }
 
     .quality-titles {
-        width: 264px;
+        max-width: 264px;
     }
 
     .quality-icons-cont {
@@ -200,14 +218,14 @@
     .footer-subscribe-div {
         margin-left: 0;
         margin-right: 0;
-        width: 453px;
+        max-width: 453px;
     }
 
     .footer-subscribe-form {
         display: flex;
         flex-wrap: nowrap;
         margin-top: 16px;
-        width: 453px;
+        max-width: 453px;
     }
 
 
