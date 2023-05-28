@@ -298,6 +298,7 @@ img {
     background-color: transparent;
     border: none;
     display: block;
+    margin-right: 16px;
 }
 
 .mobile-open-icon {
