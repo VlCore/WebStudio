@@ -1,3 +1,3 @@
-# goit-markup-hw-06
+WebStudio
 
 WebStudio simple site 
