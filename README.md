@@ -1,3 +1,3 @@
 # goit-markup-hw-06
 
-GoIT homework 6
+WebStudio simple site 
